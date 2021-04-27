@@ -30,8 +30,8 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         mName = findViewById(R.id.name);
-        mEmail = findViewById(R.id.email);
-        mPass = findViewById(R.id.pass);
+        mEmail = findViewById(R.id.email1);
+        mPass = findViewById(R.id.pass1);
         mEnroll = findViewById(R.id.enroll);
         mRegister = findViewById(R.id.register);
         mIfreg = findViewById(R.id.ifreg);
@@ -77,5 +77,11 @@ public class Register extends AppCompatActivity {
 
         });
 
+    }
+
+
+    public void ifreg(View view) {
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
     }
 }

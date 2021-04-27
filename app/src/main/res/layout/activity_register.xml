@@ -58,11 +58,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email1"
         app:layout_constraintVertical_bias="0.235" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/email1"
         android:layout_width="361dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
@@ -108,11 +108,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.383" />
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="0.383"
+        android:onClick="ifreg"/>
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/pass1"
         android:layout_width="361dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -122,6 +123,6 @@
         app:layout_constraintBottom_toTopOf="@+id/enroll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email1"
         app:layout_constraintVertical_bias="0.478" />
 </androidx.constraintlayout.widget.ConstraintLayout>
