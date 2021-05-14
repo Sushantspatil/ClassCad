@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".TimeTable">
+
+    <TextView
+        android:id="@+id/SelectDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the day"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/mon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mon"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Monday"
+        app:backgroundTint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/tue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="mon1"/>
+
+    <Button
+        android:id="@+id/tue"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tuesday"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/wed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/wed"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Wednesday"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/thu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/thu"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Thursday"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/fri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fri"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="156dp"
+        android:text="Friday"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back2main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:onClick="backTT"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fri"
+        app:layout_constraintVertical_bias="0.359" />
+</androidx.constraintlayout.widget.ConstraintLayout>
