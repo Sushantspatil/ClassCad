@@ -23,4 +23,9 @@ public class TimeTable extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
         finish();
     }
+
+    public void tue1(View view) {
+        startActivity(new Intent(getApplicationContext(),tueTT.class));
+        finish();
+    }
 }
