@@ -55,7 +55,8 @@
         app:layout_constraintBottom_toTopOf="@+id/thu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="wed1"/>
 
     <Button
         android:id="@+id/thu"

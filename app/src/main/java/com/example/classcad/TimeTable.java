@@ -28,4 +28,9 @@ public class TimeTable extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),tueTT.class));
         finish();
     }
+
+    public void wed1(View view) {
+        startActivity(new Intent(getApplicationContext(),wedTT.class));
+        finish();
+    }
 }
